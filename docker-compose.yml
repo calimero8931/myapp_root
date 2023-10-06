@@ -40,3 +40,9 @@ services:
       - "$FRONT_PORT:3000"
     depends_on:
       - api
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "8025:8025"
+      - "2525:25"
